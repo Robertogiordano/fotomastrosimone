@@ -14,7 +14,7 @@ var activeImg;
 function loadImages(scrollContainer, start,end) {
   for (let i = start; i <= end; i++) {
     const img = new Image();
-    img.dataset.src = `file/foto/img-${i}.jpg`; // Assumi che le immagini siano nella stessa directory del file HTML
+    img.dataset.src = `./file/foto/img-${i}.jpg`; // Assumi che le immagini siano nella stessa directory del file HTML
     img.alt = `Immagine ${i}`;
     img.classList.add('image');
     img.classList.add('lazy');
@@ -28,7 +28,7 @@ function loadImages(scrollContainer, start,end) {
 }
 
 function openPopup() {
-  popupImage.src = `file/foto/img-${activeImg}.jpg`;
+  popupImage.src = `./file/foto/img-${activeImg}.jpg`;
   popup.style.display = 'flex';
 }
 
