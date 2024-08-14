@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Studio Fotografico Mastrosimone</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">Chi Siamo</a></li>
+            <li><a href="#contact">Contatti</a></li>
+          </ul>
+        </nav>
+      </header>
+      <br><br><br>
+  <section id="home" class="hero">
+    <img  class="logo" src="file/logo.gif" alt="Logo dello studio fotografico">
+    <img src="file/studio/imgLoc-7.jpg" id="background">
+    <div class="hero-content">
+        <h1>Benvenuti nello <br id="divisor"> Studio Fotografico Mastrosimone</h1>
+        <p>Catturiamo i momenti speciali della tua vita</p>
+        <a href="#portfolio" class="cta-button">Scopri di più</a>
+    </div>
+  </section>
+
+  
+
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+
+    <div class="scroll-container" id="scrollContainer1">
+    <!-- Le immagini verranno aggiunte dinamicamente qui -->
+    </div>
+
+    <div class="scroll-container" id="scrollContainerBimbi">
+        <!-- Le immagini verranno aggiunte dinamicamente qui -->
+    </div>
+
+    <div class="scroll-container" id="scrollContainer2">
+        <!-- Le immagini verranno aggiunte dinamicamente qui -->
+    </div>
+
+    <!-- Pop-up -->
+  <div class="popup" id="popup">
+    <span class="popup-close" id="popupClose">&times;</span>
+    <img class="popup-image" id="popupImage" src="" alt="Immagine Pop-up">
+    <button class="popup-prev" id="popupPrev" onclick="prevImg()">&lt;</button>
+    <button class="popup-next" id="popupNext" onclick="nextImg()">&gt;</button>
+  </div>
+  <h2>Scorri per vedere i nostri trailer</h2>
+  <div class="videosection">
+    
+    <video controls poster="file/video/poster0.jpg">
+      <!-- Fallback content for browsers that don't support video -->
+      <p>Your browser does not support the video tag.</p>
+      
+      <!-- Lazy-loaded video sources -->
+      <source src="file/video/trailer0.mp4" type="video/mp4">
+
+    </video>
+
+    <video controls poster="file/video/poster1.jpg">
+      <!-- Fallback content for browsers that don't support video -->
+      <p>Your browser does not support the video tag.</p>
+      
+      <!-- Lazy-loaded video sources -->
+      <source src="file/video/trailer1.mp4" type="video/mp4">
+    </video>
+
+    <video controls poster="file/video/poster2.jpg">
+      <!-- Fallback content for browsers that don't support video -->
+      <p>Your browser does not support the video tag.</p>
+      
+      <!-- Lazy-loaded video sources -->
+      <source src="file/video/trailer2.mp4" type="video/mp4">
+    </video>
+
+    <video controls poster="file/video/poster3.jpg">
+      <!-- Fallback content for browsers that don't support video -->
+      <p>Your browser does not support the video tag.</p>
+      
+      <!-- Lazy-loaded video sources -->
+      <source src="file/video/trailer3.mp4" type="video/mp4">
+    </video>
+
+    <video controls poster="file/video/poster4.jpg">
+      <!-- Fallback content for browsers that don't support video -->
+      <p>Your browser does not support the video tag.</p>
+      
+      <!-- Lazy-loaded video sources -->
+      <source src="file/video/trailer4.mp4" type="video/mp4">
+    </video>
+
+    <video controls poster="file/video/poster5.jpg">
+      <!-- Fallback content for browsers that don't support video -->
+      <p>Your browser does not support the video tag.</p>
+      
+      <!-- Lazy-loaded video sources -->
+      <source src="file/video/trailer5.mp4" type="video/mp4">
+    </video>
+
+    <video controls poster="file/video/poster6.jpg">
+      <!-- Fallback content for browsers that don't support video -->
+      <p>Your browser does not support the video tag.</p>
+      
+      <!-- Lazy-loaded video sources -->
+      <source src="file/video/trailer6.mp4" type="video/mp4">
+    </video>
+
+    <video controls poster="file/video/poster7.jpg">
+      <!-- Fallback content for browsers that don't support video -->
+      <p>Your browser does not support the video tag.</p>
+      
+      <!-- Lazy-loaded video sources -->
+      <source src="file/video/trailer7.mp4" type="video/mp4">
+    </video>
+    
+  </div>
+  </section>
+
+
+
+  <section id="about" class="about">
+    <h2>Chi Siamo</h2>
+    <p>Siamo un team di fotografi professionisti specializzati in matrimoni e servizi fotografici. Catturiamo momenti preziosi con creatività e passione.</p>
+    <div class="studioIMG">
+      <img src="file/studio/imgLoc-0.jpg">
+      <img src="file/studio/imgLoc-1.jpg">
+      <img src="file/studio/imgLoc-2.jpg">
+      <img src="file/studio/imgLoc-3.jpg">
+      <img src="file/studio/imgLoc-4.jpg">
+      <img src="file/studio/imgLoc-6.jpg">
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contatti</h2>
+    <p>Hai domande o vuoi prenotare i nostri servizi? Contattaci!</p>
+    <div class="contact-info">
+      <p>Email: <a href="mailto">fotomastrosimone@gmail.com</a></p>
+      <p>Telefono: <a href="tel">+39 093425884</a></p>
+      <p>Cellulare: <a href="tel">+39 3382896118</a></p>
+      <p>Cellulare: <a href="tel">+39 3687188014</a></p>
+      <p>Indirizzo: Via Pacini 16, Caltanissetta, 93100, Italy</p>
+
+      <a href="https://www.facebook.com/massimo.mastrosimone.5"><img src="file/icon-fb.png" width="150px"></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Studio Fotografico Mastrosimone. Tutti i diritti riservati.</p>
+    <p>Sviluppato da: Roberto Giordano</p>
+  </footer>
+  
+
+</body>
+<script src="script.js"></script>
+</html>
