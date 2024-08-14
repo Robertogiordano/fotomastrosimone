@@ -1,0 +1,274 @@
+  /* Stili globali */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* Header */
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.388);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav{
+    flex: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  
+  nav ul {
+    grid-column: 2/3;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  @media (max-width:600px) {
+    nav ul{
+      grid-column: 1/4;
+    }
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: underline;
+    color:#000;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+  }
+  
+  nav a:hover{
+    color:rgb(182, 164, 142)
+  }
+  
+
+  /* Hero Section */
+  .hero {
+    background-image: url('file/studio/imgLoc-7.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 2px 2px 20px #000;
+    font-size: large;
+    text-align: center;
+    min-height: 1000px;
+  }
+
+  @media (max-width:600px){
+    .hero{
+      background-image:none;
+      background-color: #000;
+      min-height: 50px;
+    }
+  }
+
+  #background{
+    display: none;
+  }
+
+  @media (max-width:600px){
+    #background{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .hero .logo{
+    height: 130px;
+    margin-bottom: 220px;
+    margin-top: 50px;;
+  }
+
+  @media (max-width:600px) {
+    .hero .logo{
+      height: 70px;
+      margin-top: 20px;;
+      margin-bottom: 10px;
+    }
+  }
+
+  .hero-content{
+    background-color: #8a8a8a83;
+    padding: 5px;
+  }
+
+   @media (max-width:600px) {
+    .hero-content{
+      font-size: small;
+    }
+  }
+
+  #divisor{
+    display: none;
+  }
+
+  @media (max-width:600px) {
+    #divisor{
+      display: block;
+    }
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .cta-button:hover{
+    background-color: #905700;
+  }
+  
+  
+  /* Portfolio Section */
+  .portfolio {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width:600px) {
+    .portfolio{
+      padding: 20px 0px;
+    }
+  }
+  
+  .scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    margin-bottom: 100px;;
+  }
+  
+  .image {
+    flex: 0 0 auto;
+    width: auto;
+    height: 700px;
+    object-fit: cover;
+  }
+
+  @media (max-width:600px) {
+    .portfolio .image{
+      height: 200px;
+    }
+  }
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-image {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.popup-close,
+.popup-prev,
+.popup-next {
+  position: absolute;
+  top: 20px;
+  
+  color: white;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup-close {
+  right: 30px;
+}
+
+.popup-prev {
+  top: 50%;
+  left: 10px;
+}
+
+.popup-next {
+  top: 50%;
+  right: 10px;
+}
+
+.videosection{
+  display: flex;
+  overflow-x: scroll;
+}
+
+.videosection video{
+  width: 100%;
+  border: 1px solid white;
+}
+ 
+  /* About Us Section */
+  .about {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #33333327;
+  }
+
+  .studioIMG{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 10px 10px;
+  }
+
+  @media (max-width:600px) {
+    .studioIMG{
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .studioIMG img{
+    width:100%;
+  }
+
+ 
+
+
+  
+  /* Contact Section */
+  .contact {
+    background-color: #f4f4f4;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
