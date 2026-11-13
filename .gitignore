@@ -1,0 +1,8 @@
+scripts/migrate-log.json
+.DS_Store
+# Sorgenti grafici: restano in locale, non vanno pubblicati
+file/Logo 2021 video.psd
+file/logo.png
+
+# Foto originali: ora su Cloudinary, restano solo in locale
+file/

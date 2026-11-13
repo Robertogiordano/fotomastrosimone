@@ -1,2 +1,6 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /scripts/
+Disallow: /data/galleries.config.json
+
+Sitemap: https://www.fotomastrosimone.it/sitemap.xml

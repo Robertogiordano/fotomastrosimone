@@ -1,0 +1,13 @@
+{
+  "siteUrl": "https://www.fotomastrosimone.it",
+  "pages": [
+    { "path": "/", "priority": 1.0 },
+    { "path": "/matrimoni/", "priority": 0.9 },
+    { "path": "/bambini/", "priority": 0.8 }
+  ],
+  "galleries": [
+    { "tag": "matrimoni", "slug": "matrimoni", "page": "/matrimoni/", "title": "Matrimoni", "description": "Fotografo matrimoni a Caltanissetta e in Sicilia" },
+    { "tag": "bimbi", "slug": "bambini", "page": "/bambini/", "title": "Bambini", "description": "Servizi fotografici per bambini a Caltanissetta" },
+    { "tag": "studio", "slug": "studio", "page": "/", "title": "Lo studio", "description": "Lo studio fotografico Mastrosimone" }
+  ]
+}

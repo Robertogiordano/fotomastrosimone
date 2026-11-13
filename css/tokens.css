@@ -1,0 +1,85 @@
+/* Foto Mastrosimone — generated from the design system tokens.json (https://claude.ai/artifact/B8bbobnEXW3TGHrKMBXqdN). Do not edit by hand. */
+:root {
+  color-scheme: light;
+  --paper: #f5f3f4;
+  --paper-raised: #ffffff;
+  --paper-sunk: #ebe7ea;
+  --ink: #24232b;
+  --ink-muted: #5e5a66;
+  --line: #d9d4d8;
+  --notte: #273b50;
+  --on-notte: #ffffff;
+  --cipria: #b9968f;
+  --cipria-ink: #7a5953;
+  --argento: #b0b0b0;
+  --grafite: #484848;
+  --ardesia: #8a8fa8;
+  --on-photo: #ffffff;
+  --scrim: rgba(14, 15, 19, 0.62);
+  --overlay: rgba(10, 11, 14, 0.94);
+  --whatsapp: #1f7a4d;
+  --on-whatsapp: #ffffff;
+  --shadow-lift: 0 12px 32px rgba(20, 21, 27, 0.14);
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --radius-none: 0;
+  --radius-sm: 2px;
+  --radius-pill: 999px;
+  --measure-text: 62ch;
+  --container: 1240px;
+  --header-h: 72px;
+  --font-sans: "Jost", "Futura", "Avenir Next", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #14151b;
+    --paper-raised: #1d1f27;
+    --paper-sunk: #0e0f13;
+    --ink: #ece9ee;
+    --ink-muted: #a9a5b0;
+    --line: #2e3039;
+    --notte: #8fa6c2;
+    --on-notte: #14151b;
+    --cipria: #c9aaa4;
+    --cipria-ink: #d9bdb7;
+    --argento: #b0b0b0;
+    --grafite: #c8c8c8;
+    --ardesia: #8a8fa8;
+    --on-photo: #ffffff;
+    --scrim: rgba(14, 15, 19, 0.7);
+    --overlay: rgba(6, 6, 9, 0.96);
+    --whatsapp: #3fbf7f;
+    --on-whatsapp: #0e0f13;
+    --shadow-lift: 0 12px 32px rgba(0, 0, 0, 0.5);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #14151b;
+  --paper-raised: #1d1f27;
+  --paper-sunk: #0e0f13;
+  --ink: #ece9ee;
+  --ink-muted: #a9a5b0;
+  --line: #2e3039;
+  --notte: #8fa6c2;
+  --on-notte: #14151b;
+  --cipria: #c9aaa4;
+  --cipria-ink: #d9bdb7;
+  --argento: #b0b0b0;
+  --grafite: #c8c8c8;
+  --ardesia: #8a8fa8;
+  --on-photo: #ffffff;
+  --scrim: rgba(14, 15, 19, 0.7);
+  --overlay: rgba(6, 6, 9, 0.96);
+  --whatsapp: #3fbf7f;
+  --on-whatsapp: #0e0f13;
+  --shadow-lift: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
