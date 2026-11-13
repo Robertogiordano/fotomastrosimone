@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T17:23:06.326Z",
+  "generatedAt": "2026-11-13T17:24:26.750Z",
   "cloudName": "drbshn2c",
   "galleries": [
     {
@@ -10,11 +10,536 @@
       "description": "Fotografo matrimoni a Caltanissetta e in Sicilia",
       "images": [
         {
+          "id": "sposa_54",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:58.000Z"
+        },
+        {
+          "id": "sposi_106",
+          "w": 5571,
+          "h": 3713,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:52.000Z"
+        },
+        {
+          "id": "sposa_63",
+          "w": 3672,
+          "h": 5507,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:51.000Z"
+        },
+        {
+          "id": "sposa_60",
+          "w": 5896,
+          "h": 3931,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:47.000Z"
+        },
+        {
+          "id": "fuori_12",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:45.000Z"
+        },
+        {
+          "id": "sposa_67",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:42.000Z"
+        },
+        {
+          "id": "sposi_134",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:38.000Z"
+        },
+        {
+          "id": "129",
+          "w": 3328,
+          "h": 2222,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:33.000Z"
+        },
+        {
+          "id": "sposi_132",
+          "w": 4123,
+          "h": 2754,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:32.000Z"
+        },
+        {
+          "id": "sposi_138",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:31.000Z"
+        },
+        {
+          "id": "sposa_74",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:29.000Z"
+        },
+        {
+          "id": "SPosa_82",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:27.000Z"
+        },
+        {
+          "id": "sposi_136",
+          "w": 2832,
+          "h": 4240,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:25.000Z"
+        },
+        {
+          "id": "esterni_14",
+          "w": 2577,
+          "h": 3867,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:20.000Z"
+        },
+        {
+          "id": "chiesa_16",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:19.000Z"
+        },
+        {
+          "id": "esterni_10",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:17.000Z"
+        },
+        {
+          "id": "sposa_87",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:13.000Z"
+        },
+        {
+          "id": "esterni_12",
+          "w": 2832,
+          "h": 4240,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:12.000Z"
+        },
+        {
+          "id": "esterni_11",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:09.000Z"
+        },
+        {
+          "id": "sposa_893",
+          "w": 3792,
+          "h": 2532,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:00.000Z"
+        },
+        {
+          "id": "sposa_90",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:16:00.000Z"
+        },
+        {
+          "id": "sposa_91",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:59.000Z"
+        },
+        {
+          "id": "fuori_16",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:58.000Z"
+        },
+        {
+          "id": "chiesa_21",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:54.000Z"
+        },
+        {
+          "id": "fuori_17",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:54.000Z"
+        },
+        {
+          "id": "Sposa_97",
+          "w": 4272,
+          "h": 2848,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:52.000Z"
+        },
+        {
+          "id": "Sposa_99",
+          "w": 4379,
+          "h": 2920,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:45.000Z"
+        },
+        {
+          "id": "Sposa_94",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:43.000Z"
+        },
+        {
+          "id": "Sposa_96",
+          "w": 2266,
+          "h": 1514,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:41.000Z"
+        },
+        {
+          "id": "sposo_13",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:41.000Z"
+        },
+        {
+          "id": "chiesa_23",
+          "w": 6000,
+          "h": 4000,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:39.000Z"
+        },
+        {
+          "id": "sposo_14",
+          "w": 5894,
+          "h": 3930,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:36.000Z"
+        },
+        {
+          "id": "fuori_20",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:35.000Z"
+        },
+        {
+          "id": "chiesa_24",
+          "w": 6000,
+          "h": 4000,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:34.000Z"
+        },
+        {
+          "id": "chiesa_25",
+          "w": 6000,
+          "h": 4000,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:32.000Z"
+        },
+        {
+          "id": "fuori_21",
+          "w": 4000,
+          "h": 6000,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:30.000Z"
+        },
+        {
+          "id": "fuori_26",
+          "w": 3997,
+          "h": 2670,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:14.000Z"
+        },
+        {
+          "id": "fuori_28",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:12.000Z"
+        },
+        {
+          "id": "fuori_25",
+          "w": 2787,
+          "h": 4172,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:11.000Z"
+        },
+        {
+          "id": "fuori_27",
+          "w": 2291,
+          "h": 3429,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:09.000Z"
+        },
+        {
+          "id": "sposo_16",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:09.000Z"
+        },
+        {
+          "id": "chiesa_28",
+          "w": 6000,
+          "h": 4000,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:05.000Z"
+        },
+        {
+          "id": "Sposa_101",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:03.000Z"
+        },
+        {
+          "id": "chiesa_29",
+          "w": 6000,
+          "h": 4000,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:01.000Z"
+        },
+        {
+          "id": "fuori_40",
+          "w": 2552,
+          "h": 3821,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:15:00.000Z"
+        },
+        {
+          "id": "sposa_103",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:58.000Z"
+        },
+        {
+          "id": "fuori_43",
+          "w": 2271,
+          "h": 3400,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:54.000Z"
+        },
+        {
+          "id": "sposa_107",
+          "w": 2448,
+          "h": 3666,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:53.000Z"
+        },
+        {
+          "id": "fuori_41",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:47.000Z"
+        },
+        {
+          "id": "sposi_145",
+          "w": 6000,
+          "h": 4000,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:43.000Z"
+        },
+        {
+          "id": "fuori_44",
+          "w": 2832,
+          "h": 4240,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:42.000Z"
+        },
+        {
+          "id": "fuori_46",
+          "w": 3848,
+          "h": 2570,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:42.000Z"
+        },
+        {
+          "id": "fuori_45",
+          "w": 3535,
+          "h": 2362,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:41.000Z"
+        },
+        {
           "id": "chiesa_32",
           "w": 3840,
           "h": 3294,
           "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
           "createdAt": "2026-11-13T17:14:37.000Z"
+        },
+        {
+          "id": "fuori_47",
+          "w": 2493,
+          "h": 3732,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:32.000Z"
+        },
+        {
+          "id": "DSC03055_ela",
+          "w": 6690,
+          "h": 4460,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:31.000Z"
+        },
+        {
+          "id": "chiesa_34",
+          "w": 2887,
+          "h": 2062,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:30.000Z"
+        },
+        {
+          "id": "esterni_21",
+          "w": 2832,
+          "h": 4240,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:28.000Z"
+        },
+        {
+          "id": "esterni_20",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:21.000Z"
+        },
+        {
+          "id": "sposa_112",
+          "w": 7008,
+          "h": 4672,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:21.000Z"
+        },
+        {
+          "id": "esterni_23",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:20.000Z"
+        },
+        {
+          "id": "ristorante_3",
+          "w": 4240,
+          "h": 2320,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:15.000Z"
+        },
+        {
+          "id": "DSC08024_ela",
+          "w": 4052,
+          "h": 2707,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:11.000Z"
+        },
+        {
+          "id": "DSC08007_b_elab",
+          "w": 2832,
+          "h": 4240,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:10.000Z"
+        },
+        {
+          "id": "chiesa_36",
+          "w": 4672,
+          "h": 7008,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:06.000Z"
+        },
+        {
+          "id": "sposa_113",
+          "w": 4672,
+          "h": 7008,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:06.000Z"
+        },
+        {
+          "id": "fuori_49",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:05.000Z"
+        },
+        {
+          "id": "sposa_114",
+          "w": 7008,
+          "h": 4672,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:14:02.000Z"
+        },
+        {
+          "id": "fuori_50",
+          "w": 3951,
+          "h": 2639,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:13:57.000Z"
+        },
+        {
+          "id": "Mare_4_2",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:13:53.000Z"
+        },
+        {
+          "id": "Sposi_101",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:13:48.000Z"
+        },
+        {
+          "id": "sposa_55",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:13:46.000Z"
+        },
+        {
+          "id": "fuori_52",
+          "w": 4600,
+          "h": 3067,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:13:45.000Z"
+        },
+        {
+          "id": "1_copia",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:13:42.000Z"
+        },
+        {
+          "id": "esterni_1_2",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:13:42.000Z"
+        },
+        {
+          "id": "fuori_7",
+          "w": 4240,
+          "h": 2832,
+          "alt": "Matrimoni – Studio Fotografico Mastrosimone, Caltanissetta",
+          "createdAt": "2026-11-13T17:13:38.000Z"
         },
         {
           "id": "fotomastrosimone/img-167",
