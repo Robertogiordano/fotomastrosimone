@@ -31,6 +31,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <link rel="dns-prefetch" href="https://i.ytimg.com">
   <link rel="preload" as="image" href="/img/studio-7-1280.webp" imagesrcset="/img/studio-7-768.webp 768w, /img/studio-7-1280.webp 1280w, /img/studio-7-1920.webp 1920w" imagesizes="100vw" fetchpriority="high">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap">
   <link rel="stylesheet" href="/css/tokens.css">
@@ -119,15 +120,26 @@
   <header class="fm-heading">
     <p class="fm-heading__eyebrow">Video</p>
     <h2 id="video-title">I nostri trailer</h2>
-    <p class="fm-heading__lead">Qualche minuto per raccontare un'intera giornata. Usa le frecce del player per scorrere la playlist.</p>
+    <p class="fm-heading__lead">Qualche minuto per raccontare un'intera giornata. Scegli un trailer dall'elenco e guardalo qui.</p>
   </header>
-  <!-- Inserire qui l'ID della playlist YouTube (la parte dopo "list=" nel link della playlist). Vuoto = sezione nascosta. -->
-  <div class="fm-player" data-yt-playlist="PLRaZwiSmr7_g">
-    <button type="button" class="fm-video__frame" aria-label="Riproduci i trailer video su YouTube">
-      <img src="/img/video-poster.webp" alt="" width="1280" height="569" loading="lazy" decoding="async">
-      <span class="fm-video__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg></span>
-    </button>
-    <p class="fm-player__note">Il video si carica da YouTube solo quando premi play. Tutti i nostri video sono sul <a href="https://www.youtube.com/@massimomastrosimone9468/playlists" rel="noopener" target="_blank">canale YouTube</a>.</p>
+  <!-- L'elenco dei video arriva da data/videos.json (sincronizzato ogni notte dalla playlist YouTube in data/galleries.config.json). -->
+  <div class="fm-videoplayer" data-yt-playlist="PLRaZwiSmr7_g">
+    <div class="fm-videoplayer__stage" data-video-stage>
+      <button type="button" class="fm-video__frame" data-video-play aria-label="Riproduci i trailer video su YouTube">
+        <img src="/img/video-poster.webp" alt="" width="1280" height="569" loading="lazy" decoding="async" data-video-poster>
+        <span class="fm-video__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg></span>
+      </button>
+    </div>
+    <div class="fm-videoplayer__meta">
+      <h3 data-video-title>Trailer</h3>
+      <span class="fm-videoplayer__count fm-tabular" data-video-count></span>
+    </div>
+    <div class="fm-carousel" data-video-carousel hidden>
+      <button type="button" class="fm-carousel__btn fm-carousel__btn--prev" data-carousel-prev aria-label="Video precedenti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <ul class="fm-carousel__track" data-video-list aria-label="Elenco dei trailer"></ul>
+      <button type="button" class="fm-carousel__btn fm-carousel__btn--next" data-carousel-next aria-label="Altri video"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+    <p class="fm-player__note">I video si caricano da YouTube solo quando premi play. Tutti i nostri video sono sul <a href="https://www.youtube.com/@massimomastrosimone9468/playlists" rel="noopener" target="_blank">canale YouTube</a>.</p>
   </div>
 </section>
 

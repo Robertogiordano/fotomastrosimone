@@ -200,26 +200,146 @@ async function initGalleries() {
   }
 }
 
-/* ---------- Video YouTube (facade: l'iframe parte solo al click) ---------- */
-function initVideo() {
+/* ---------- Video YouTube: player + carosello (l'iframe parte solo al click) ---------- */
+const PLAY_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>';
+
+// Titoli numerici della playlist ("1", "2"…) diventano "Trailer 1", "Trailer 2"…
+const videoTitle = (v, i) => (/^\s*\d*\s*$/.test(v.title) ? `Trailer ${v.title.trim() || i + 1}` : v.title);
+
+function youtubeIframe(src, title) {
+  const iframe = document.createElement('iframe');
+  iframe.src = src;
+  iframe.title = title;
+  iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+  iframe.allowFullscreen = true;
+  iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+  return iframe;
+}
+
+function addVideoSchema(videos) {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Trailer video – Studio Fotografico Mastrosimone',
+    itemListElement: videos.map((v, i) => ({
+      '@type': 'VideoObject',
+      position: i + 1,
+      name: `${videoTitle(v, i)} – Studio Fotografico Mastrosimone`,
+      description: v.description || 'Trailer di matrimonio realizzato dallo Studio Fotografico Mastrosimone di Caltanissetta.',
+      thumbnailUrl: `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`,
+      uploadDate: v.published,
+      embedUrl: `https://www.youtube-nocookie.com/embed/${v.id}`,
+      url: `https://www.youtube.com/watch?v=${v.id}`,
+    })),
+  };
+  const s = document.createElement('script');
+  s.type = 'application/ld+json';
+  s.textContent = JSON.stringify(data);
+  document.head.append(s);
+}
+
+async function initVideo() {
   const box = document.querySelector('[data-yt-playlist]');
   if (!box) return;
   const playlist = box.dataset.ytPlaylist.trim();
-  if (!playlist) {
-    box.closest('section')?.setAttribute('hidden', '');
-    document.querySelectorAll('a[href="#video"], a[href="/#video"]').forEach((a) => a.closest('li')?.setAttribute('hidden', ''));
+  const stage = box.querySelector('[data-video-stage]');
+  const titleEl = box.querySelector('[data-video-title]');
+  const countEl = box.querySelector('[data-video-count]');
+
+  let videos = [];
+  try {
+    const res = await fetch('/data/videos.json', { cache: 'no-cache' });
+    if (res.ok) videos = (await res.json()).videos || [];
+  } catch (err) {
+    console.error(err);
+  }
+
+  // Senza elenco: un solo player con l'intera playlist (o sezione nascosta se non c'è nemmeno quella).
+  if (!videos.length) {
+    if (!playlist) {
+      box.closest('section')?.setAttribute('hidden', '');
+      document.querySelectorAll('a[href="#video"], a[href="/#video"]').forEach((a) => a.closest('li')?.setAttribute('hidden', ''));
+      return;
+    }
+    const btn = stage.querySelector('[data-video-play]');
+    btn.addEventListener('click', () => {
+      const iframe = youtubeIframe(`https://www.youtube-nocookie.com/embed/videoseries?list=${encodeURIComponent(playlist)}&autoplay=1&rel=0`, 'Trailer video dello Studio Fotografico Mastrosimone');
+      btn.replaceWith(iframe);
+      iframe.focus();
+    }, { once: true });
     return;
   }
-  const btn = box.querySelector('.fm-video__frame');
-  btn.addEventListener('click', () => {
-    const iframe = document.createElement('iframe');
-    iframe.src = `https://www.youtube-nocookie.com/embed/videoseries?list=${encodeURIComponent(playlist)}&autoplay=1&rel=0`;
-    iframe.title = 'Trailer video dello Studio Fotografico Mastrosimone';
-    iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-    iframe.allowFullscreen = true;
-    btn.replaceWith(iframe);
-    iframe.focus();
-  }, { once: true });
+
+  const carousel = box.querySelector('[data-video-carousel]');
+  const list = box.querySelector('[data-video-list]');
+  const prev = box.querySelector('[data-carousel-prev]');
+  const next = box.querySelector('[data-carousel-next]');
+  let current = 0;
+
+  // Anteprima nel player (facade): miniatura YouTube + pulsante play.
+  const showFacade = (i) => {
+    const v = videos[i];
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'fm-video__frame';
+    btn.setAttribute('aria-label', `Riproduci: ${videoTitle(v, i)}`);
+    btn.innerHTML = `<img src="https://i.ytimg.com/vi/${v.id}/maxresdefault.jpg" alt="" width="1280" height="720" decoding="async"><span class="fm-video__play">${PLAY_ICON}</span>`;
+    // Se il video non ha la miniatura HD, YouTube restituisce un segnaposto 120×90: ripiega su hqdefault.
+    const img = btn.querySelector('img');
+    const fallback = () => { if (!img.src.includes('hqdefault')) img.src = `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`; };
+    img.addEventListener('error', fallback, { once: true });
+    img.addEventListener('load', () => { if (img.naturalWidth <= 120) fallback(); });
+    btn.addEventListener('click', () => play(i), { once: true });
+    stage.replaceChildren(btn);
+  };
+
+  const play = (i) => {
+    const v = videos[i];
+    const iframe = youtubeIframe(`https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.id)}?autoplay=1&rel=0&modestbranding=1`, `${videoTitle(v, i)} – Studio Fotografico Mastrosimone`);
+    stage.replaceChildren(iframe);
+  };
+
+  const select = (i, { autoplay }) => {
+    current = i;
+    titleEl.textContent = videoTitle(videos[i], i);
+    countEl.textContent = `${i + 1} / ${videos.length}`;
+    list.querySelectorAll('.fm-thumb').forEach((t, k) => t.setAttribute('aria-current', String(k === i)));
+    if (autoplay) play(i); else showFacade(i);
+  };
+
+  const frag = document.createDocumentFragment();
+  videos.forEach((v, i) => {
+    const li = document.createElement('li');
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'fm-thumb';
+    btn.setAttribute('aria-label', `Guarda ${videoTitle(v, i)}`);
+    btn.innerHTML = `<span class="fm-thumb__img"><img src="https://i.ytimg.com/vi/${v.id}/mqdefault.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="fm-thumb__icon">${PLAY_ICON}</span></span><span class="fm-thumb__title"></span>`;
+    btn.querySelector('.fm-thumb__title').textContent = videoTitle(v, i);
+    btn.addEventListener('click', () => {
+      select(i, { autoplay: true });
+      // Su schermi piccoli riporta il player in vista.
+      if (stage.getBoundingClientRect().top < 0) stage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    li.append(btn);
+    frag.append(li);
+  });
+  list.replaceChildren(frag);
+  carousel.hidden = videos.length < 2;
+
+  // Frecce: scorrono di una "pagina" e si disattivano agli estremi.
+  const updateArrows = () => {
+    prev.disabled = list.scrollLeft <= 4;
+    next.disabled = list.scrollLeft + list.clientWidth >= list.scrollWidth - 4;
+  };
+  prev.addEventListener('click', () => list.scrollBy({ left: -list.clientWidth * 0.9 }));
+  next.addEventListener('click', () => list.scrollBy({ left: list.clientWidth * 0.9 }));
+  list.addEventListener('scroll', updateArrows, { passive: true });
+  addEventListener('resize', updateArrows, { passive: true });
+
+  select(0, { autoplay: false });
+  updateArrows();
+  addVideoSchema(videos);
 }
 
 /* ---------- Mappa (facade) ---------- */
